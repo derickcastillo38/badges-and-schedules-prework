@@ -8,5 +8,8 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(attendees)
-  attendees
+  attendees.map.with_index do |name, idx|
+    "Hello, #{name}! You'll be assigned to room #{idx + 1}!"
+  end
+    
 end
